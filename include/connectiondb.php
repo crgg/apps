@@ -10,7 +10,7 @@ $db = "restadb";
 db.net/heroku_562af75849a3e82?reconnect=true"));
 
 $server = $url["host"];
-$username = $url["user", 'bb648ed5d5536e'];
+$username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
 $con = new mysqli($serverName,$username,$password,$db); 
