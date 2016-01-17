@@ -7,7 +7,7 @@
                         
                           <ul class="nav nav-pills">
 					   <li><a href="index.php">Home</a></li>
-					   <li><a href="categorias_list.php">Category</a></li>
+					   <li><a href="categorias_List.php">Category</a></li>
 					   <li><a href="platos_add.php">Menu</a></li>
 					   <li><a href="speciales.php">Speciales</a> </li>
 		            </ul>		 
