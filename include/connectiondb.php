@@ -6,7 +6,8 @@ $user = "root";
 $pass = "";
 $db = "restadb";
 
- $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+ $url = parse_url(getenv("mysql://bb648ed5d5536e:caa7f1be@us-cdbr-iron-east-03.clear
+db.net/heroku_562af75849a3e82?reconnect=true"));
 
 $server = $url["host"];
 $username = $url["user"];
