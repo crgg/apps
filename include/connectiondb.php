@@ -12,7 +12,7 @@ $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
 $db = substr($url["path"], 1);
-$con = new mysqli($serverName,$username,$password,$db); 
+$con = new mysqli($server,$username,$password,$db); 
 
 // Check connection
 if (mysqli_connect_errno())
