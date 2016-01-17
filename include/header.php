@@ -1,6 +1,6 @@
 <?php ?>
- <div class="container">
-  <div class="row">
+ 
+  <header class="row">
     <div class="col-sm-2">
         <a href="index.php"><img  class="img-responsive"  src="img/Plazadetoro.png" alt="Tanta logo"></a>
             
@@ -59,7 +59,7 @@
       </div>
     </nav>      
     </div>
-  </div>
-   </div>
+  </header>
+   
  
 

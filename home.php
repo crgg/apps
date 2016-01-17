@@ -25,14 +25,13 @@ $result = mysqli_query($con, $sql);
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Modern Business - Start Bootstrap Template</title>
+    <title>Taqueria El toreo</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -46,39 +45,45 @@ $result = mysqli_query($con, $sql);
 </head>
 
 <body>
-     <?php require_once 'include/header.php'; ?>
-     
-  
-
+  <div class="container">
+    <?php  require_once 'include/header.php'; ?>    
+  </div>    
+    
     <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
+    <div class="container-fluid">
+        <div  id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner"  role="listbox" >
             <div class="item active">
-                <div class="fill" style="background-image:url('img/04.jpg');"></div>
+                          
+                    <img src="img/04.jpg" width="100%" alt="toreo">  
+                
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    <h2></h2>
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/02.jpg');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                <!-- <div class="fill" style="background-image:url('img/02.jpg');"> -->
+                    <img   src="img/02.jpg" width="100%" alt="Chania">      
                 </div>
-            </div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
             <div class="item">
-                <div class="fill" style="background-image:url('img/05.jpg');"></div>
+                <!-- <div class="fill" style="background-image:url('img/05.jpg');"></div> -->
+                    <img  src="img/05.jpg" width="100%" alt="Plate">  
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    <h2> </h2>
                 </div>
             </div>
+        </div>
+            
         </div>
 
         <!-- Controls -->
@@ -88,10 +93,10 @@ $result = mysqli_query($con, $sql);
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-    </header>
-
+      </div>
+ </div>
     <!-- Page Content -->
-    <div class="container">
+    <div class="container"> 
 
         <!-- Marketing Icons Section -->
         <div class="row">
@@ -249,8 +254,8 @@ if ((mysqli_affected_rows($con) > 0 )) {
             </div>
         </footer>
 
-    </div>
-    <!-- /.container -->
+
+<!-- /.container -->
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -262,9 +267,12 @@ if ((mysqli_affected_rows($con) > 0 )) {
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
-    })
+    });
     </script>
 
+  </div>
+    
+ 
 </body>
 
 </html>

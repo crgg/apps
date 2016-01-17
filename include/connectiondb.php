@@ -1,18 +1,18 @@
 <?php
 // conntetion to base de datos
 
-$serverName = '127.0.0.1';
-$user = "root";
-$pass = "";
+$server = '127.0.0.1';
+$username = "root";
+$password = "";
 $db = "restadb";
 
- $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+//  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
-$con = new mysqli($server,$username,$password,$db); 
+// $server = $url["host"];
+// $username = $url["user"];
+// $password = $url["pass"];
+// $db = substr($url["path"], 1);
+  $con = new mysqli($server,$username,$password,$db); 
 
 // Check connection
 if (mysqli_connect_errno())
